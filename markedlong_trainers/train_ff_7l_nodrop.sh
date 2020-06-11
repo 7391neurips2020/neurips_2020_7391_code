@@ -1,0 +1,5 @@
+#!/bin/bash
+
+python main_estimator_markedlong.py -b 128 -ne 15 -lr 1e-4 -tr 1 -ob bce -op adam -en tranfer_neurips_pftomlrun_marked_len16_ff_7l_adam_400k -v1 ff_7l -tpu 1 -tpu-name $1 -eval-freq 1 -curv 2 -len 16 -kp 0.5 -ft-dense True -ckpt gs://ADD_BUCKET_NAME_HERE/path_finder_tfrecords/output_dir_samepad_khw5_pathfinder_curv9_fastnips_ff_7l_adam_100k_2020_05_11_02_09_12
+python main_estimator_markedlong.py -b 128 -ne 15 -lr 1e-4 -tr 1 -ob bce -op adam -en tranfer_neurips_pftomlrun_marked_len16_ff_7l_adam_400k -v1 ff_7l -tpu 1 -tpu-name $1 -eval-freq 1 -curv 2 -len 16 -kp 0.5 -ft-dense True -ckpt gs://ADD_BUCKET_NAME_HERE/path_finder_tfrecords/output_dir_samepad_khw5_pathfinder_curv9_fastnips_ff_7l_adam_100k_2020_05_11_08_04_09
+python main_estimator_markedlong.py -b 128 -ne 15 -lr 1e-4 -tr 1 -ob bce -op adam -en tranfer_neurips_pftomlrun_marked_len16_ff_7l_adam_400k -v1 ff_7l -tpu 1 -tpu-name $1 -eval-freq 1 -curv 2 -len 16 -kp 0.5 -ft-dense True -ckpt gs://ADD_BUCKET_NAME_HERE/path_finder_tfrecords/output_dir_khw5_pathfinder_curv9_fastnips_ff_7l_adam_100k_2020_05_10_23_58_55
